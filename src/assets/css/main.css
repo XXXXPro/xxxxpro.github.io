@@ -972,6 +972,9 @@ input[type="checkbox"]:checked::before {
 .header .btn_text {
   text-transform: uppercase; }
 
+.header .btn_text:hover {
+  color: #f38a00; }
+
 .header .header_btn, .header .span_right {
   margin: 0 0.6em 0 0.06em;
   list-style: none;
