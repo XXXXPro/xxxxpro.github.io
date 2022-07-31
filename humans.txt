@@ -1,0 +1,17 @@
+/* TEAM */
+   Author:   XXXX Pro
+   Contact:  me@4xpro.ru
+   Twitter:  https://twitter.com/4X_Pro
+   Location: Russia, Moscow, Perovo
+   
+/* THANKS */
+   Unknown author of Megaman X wallpaper. (This picture was taken from https://wallpapercave.com/w/wp5524429 )
+   akiritsu DeerRIDER, the author of pRoJEct-VeXEd theme for Jekyll ( https://github.com/akiritsu/pRoJEct-VeXEd )
+   All Jekyll development team ( https://jekyllrb.com )
+
+/* SITE */
+   Created: July 2002
+   Language:  Russian
+   Doctype:HTML5
+   IDE: xed, leafpad
+   No f***ing Macs were used to create this site! Linux forever!

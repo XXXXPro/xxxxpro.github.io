@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <!-- multi-device width -->
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <!-- site description -->
+    
+    <meta content="Несколько слов о том, как формировалась моя система ценностей" name="description"/>
+    <!-- title -->
+    <title>
+        
+            Поиски себя и моя система ценностей
+        
+    </title>
+    <!-- icon -->
+    <link href="/src/assets/img/favicon.ico" rel="shortcut icon bookmark" type="image/x-icon"/>
+    <!-- global stylesheet -->
+    <link rel="stylesheet" href="/src/assets/css/main.css" type="text/css"/>
+    <!-- fa 5.9.0 -->
+    <link rel="stylesheet" href="/src/assets/css/fa.min.css" type="text/css"/>
+    <!-- global script -->
+    <script src="/src/assets/js/main.js" async></script>
+    <meta property="og:title" content="Поиски себя и моя система ценностей"/>
+    <meta property="og:url" content="/me/self-search.htm"/>
+    <meta property="og:description" content="Несколько слов о том, как формировалась моя система ценностей"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Личный сайт XXXX Pro"/>
+    <meta property="og:image" content="/assets/img/logo.jpg"/>
+    <!-- mathjax 2.7.5 -->
+<!--   <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+    <!-- mermaid 8.11.5-->
+<!--    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.5/mermaid.min.js"></script>  -->
+    <style>
+.hidden { display: none }
+    </style>
+
+    <link rel="author" href="/humans.txt" />
+    <link rel="authorization_endpoint" href="http://4xpro.ru/.oauth/authorization_endpoint"/>
+
+</head>
+
+  <body class="page">
+    <!-- collection list, shown by click "archive" buttom in header -->
+<div class="collection_list_container"  id="the_collection_list">
+<div class="collection_list_background"  onclick="close_collection_list()"></div>
+<div class="collection_list" onload="none">
+    <div class="collection_list_header">
+        <!-- TODO: search post -->
+                                            <!-- <a class="search_btn">
+      <i class="fa fa-search"> Search</i>
+    </a>
+    &nbsp; -->
+        <table class="collection_list_header_title">
+            <tr>
+                <td>Archive:</td>
+                <td id="clh_title"></td>
+            </tr>
+        </table>
+        <div class="close_btn" onclick="close_collection_list()">
+            <a class="close_btn_icon">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+    </div>
+    <div class="collection_name_list">
+        <table class="vertical_center_table">
+            <tr>
+                <td>
+                    <ul>
+                        <!-- show all collections -->
+                        <li>
+                            <a class="a_collection_label" onclick="show_collection('all')">All
+                            </a>
+                        </li>
+                        <!-- show a simple collection -->
+                        
+                            
+                                
+                                    
+                                        <li>
+                                            <a class="a_collection_label" onclick="show_collection('biografy')">
+                                                
+                                                    biografy
+                                                
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                
+                            
+                        
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="posts_by_cate">
+        <!-- post list in all collections -->
+        <div class="post_list_in_1_collection" id="all">
+            <table class="vertical_center_table">
+                <tr>
+                    <td>
+                        <ul>
+                            
+                                
+                                    
+                                        
+                                            <p class="h_collection_label">
+                                                
+                                                    biografy
+                                                
+                                            </p>
+                                            
+                                            <br/>
+                                        
+                                    
+                                        
+                                    
+                                
+                            
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- post list in a collection -->
+        
+            <div class="post_list_in_1_collection" id="biografy">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="posts">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+    </div>
+</div>
+</div>
+    <div class="container" id="ctner">
+       <div class="header">
+  <table class="vertical_center_table">
+    <tr>
+      <td>
+        <nav class="nav_bar">
+          <ul>
+            <!-- left header -->
+            <li class="li_left">
+              <!-- open collection tree -->
+              
+              <!-- home -->
+              
+              <a class="header_btn" href="/">
+                <i class="fa btn_icon fa-home"></i>
+                  
+                  <span class="btn_text">Главная</span>
+                  
+              </a>
+              
+              
+                
+                  <a class="header_btn" href="/projects.htm">
+                    <i class="fa btn_icon fa-code"></i>
+                      
+                      <span class="btn_text">Проекты</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="/idealists.htm">
+                    <i class="fa btn_icon fa-level-up"></i>
+                      
+                      <span class="btn_text">Идеализм</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="/computers.htm">
+                    <i class="fa btn_icon fa-desktop"></i>
+                      
+                      <span class="btn_text">Компьютеры</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="/me/">
+                    <i class="fa btn_icon fa-id-card-o"></i>
+                      
+                      <span class="btn_text">Биография</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="/others/">
+                    <i class="fa btn_icon fa-users"></i>
+                      
+                      <span class="btn_text">Глазами других</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="http://4xpro.ru/lytdybr/">
+                    <i class="fa btn_icon fa-pencil-square-o"></i>
+                      
+                      <span class="btn_text">Дневник</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="http://4xpro.ru/forum/">
+                    <i class="fa btn_icon fa-comments-o"></i>
+                      
+                      <span class="btn_text">Форум</span>
+                      
+                  </a>
+                
+              
+              <!-- maximize -->
+              
+            </li>
+            <!-- right header -->
+            <li class="span_right">
+              
+              <a class="site_title" href="/"
+                >Личный сайт XXXX Pro</a
+              >
+               
+            </li>
+          </ul>
+        </nav>
+        <!-- <hr /> -->
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- table of content -->
+
+<!-- toggle maximize -->
+
+<!-- encrypt and decrypt -->
+
+
+      <div class="div_article" id="div_atcl">
+        <article id="main_atcl" itemscope itemtype="http://schema.org/BlogPosting">
+          <h1 id="поиски-себя">Поиски себя</h1>
+
+<p>Годы с 1999 по 2002 стали годами активного поиска себя, своего места в жизни, формирования жизненной позиции, ценностей и убеждений. (До этого у меня вся жизненная позиция сводилась к «лишь бы меня не трогали».) Тогда для меня впервые встал вопрос, что такое вообще быть правильным, достойным человеком. Ответа на этот вопрос или достойных примеров для подражания у меня не было (если не считать героев компьютерных игр Quest for Glory и Ultima IX, оказавших на меня большое влияние), зато было множество примеров неправильного поведения бывших одноклассников, вызывавшего у меня отвращение, а также масса негативных внушений от отца по поводу различных трудностей, с которыми мне предстоит столкнуться на будущей работе и вообще в жизни. И на основании всего этого я создал свою систему жизненных ценностей, главными среди которых были Познание, спокойный ритм жизни и гармония с природой и миром, в частности, умение радоваться различным мелочам прямо здесь и сейчас, а также профессионализм как возможность творить что-то действительно нужное и дарящее радость людям. Второй ценностью (а точнее, признаком достойного человека) была готовность пожертвовать своими интересами (а при необходимостью — и жизнью) ради <em>правильности</em>, т.е.  соответствия идеям, которые человек считает верными, и готовность бороться с носителями противоположных идей. (Кратко я выразил это фразой «Пусть ты заблуждаешься, но если ты готов за эти свои заблуждения взойти на костер, то ты — достойный человек».)</p>
+
+<p>Главной антиценностью стал слишком быстрый ритм жизни, навязываемый конкурентной борьбой, в которую вовлекает человека общество. В результате человек лишается времени на созерцание и возможности радоваться миру, а вынужден постоянно менять себя принудительно (например, приобретать новые знания в тех областях, которые ему на самом деле неинтересны), чтобы соответствовать требованиям этого самого общества. Антиценностями стало и все то, что вовлекает человека в конкурентную борьбу или вынуждает жить в слишком быстром ритме: карьера, избыточное материальное благополучие (и вообще работа не ради творения, а исключительно ради денег), желание быть «современным человеком», потакание своему темному животному началу вместо его подавления. Второй антиценностью стало недостаточно серьезное отношение к жизни (под которым я понимаю готовность насмехаться, стебаться над всем подряд, в частности, над ценностями другого человека).</p>
+
+<p>Также антиценностью является и семья в ее традиционном виде (т.е.  муж+жена+дети) так как наличие семьи с одной стороны сильно увеличивает потребность в материальных средствах, а с другой — ограничивает возможности человека рисковать (а при необходимости и жертвовать) собой ради идей и убеждений. Человек, у которого есть семья, становится более управляемым обществом, что существенно ограничивает его возможности по борьбе с неправильными явлениями жизни. Долгое время в антиценностях были и межполовые отношения вообще, так как я считал, что женщина — это существо, у которого все интересы сводятся к «найти себе парня покруче, вытрясти из него денег побольше и раскрутить на красивое ухаживание», а взамен способное предложить в лучшем случае удовлетворение некоторых примитивных низкоуровневых животных инстинктов. (Позже, правда, я убедился, что далеко не всегда все так плохо, бывают женщины, общение с которыми, наоборот, способствует саморазвитию.)</p>
+
+<p>Все эти ценности и антиценности применительно к моей области деятельности нашли отражение в моем <a href="/me/codex.htm">Моральном Кодексе Настоящего Компьютерщика</a>, первую редакцию которого я написал в 2001 году.</p>
+
+<p>К сожалению, в начале 2006 года произошел момент, когда обществу удалось вовлечь меня в бессмысленную гонку, и я частично отступил от своих ценностей. Произошло это следующим образом: 1 января 2006 года я принял решение о переносе своего блога из ЖЖ в Блоги@Mail.Ru. Вскоре обнаружил, что там есть рейтинг, в котором я оказался на достаточно высокой позиции (впервые увидел себя на 86 месте, потом поднимался до 11). И тогда я решил, что рейтинг — это средство, с помощью которого я смогу донести свои идеи и жизненную позицию до как можно большего количества читателей (так как ссылки на TOP-10 блогов выводились на главной странице). Расти в рейтинге (он был по количеству просмотров) можно было двумя способами — либо активно общаться с другими людьми, чтобы они ходили в мой блог регулярно, либо писать как можно больше, чтобы чаще появляться в «последних записях» на первой странице (большинство людей приходило ко мне именно оттуда). И на определенном этапе произошла подмена: желание быть на вершине рейтинга из средства стало самоцелью, и начало падать качество сообщений, так как часто я писал только ради того, чтобы хоть что-нибудь написать.</p>
+
+<p>В апреле 2006 года я столкнулся с очень неприятной ситуацией: выбором между тем, что важнее — рейтинг, или человек, который считался мне другом, хотя мы и общались редко. Тогда я сделал выбор в пользу рейтинга, что вызвало конфликт с окружением этого человека и за счет возникшего скандала подняло меня на несколько дней на первую страницу Mail.Ru. Но через несколько дней я свалился обратно, а с тем человеком пути разошлись навсегда.</p>
+
+<p>В таком состоянии я прожил около года. Потом я создал свой соционический форум, а вскоре устроился на работу, и на поддержание рейтинга стало просто не хватать времени и сил. Тем не менее, скорость жизни все равно не уменьшилась, так как начал приближаться срок окончания аспирантуры, а это означало, что нужно активнее работать над диссертацией. Но тема диссертации, которой я занимался, мне была совершенно неинтересна, в результате дело шло очень медленно. Из-за этого я постоянно жил в состоянии внутреннего конфликта между «надо делать диссертацию» и «хочу заниматься своими делами». Очень часто «хочу» побеждало, и поэтому я был постоянно недоволен собой и жил в состоянии вечной спешки, из-за которой не хватало времени на созерцание и размышления.</p>
+
+<p>Это состояние вечной спешки не исчезло даже после того, как я закончил аспирантуру и защитил диссертацию: я начал спешить в работе над своими проектами, так как с одной стороны, хотел наверстать два года, выпавшие из жизни из-за защиты, а с другой — как можно скорее добиться признания назло тем людям, с которыми у меня когда-то были конфликты (в основном, это касалось владельцев некоторых соционических форумов). Но сама по себе эта спешка совершенно не способствовала развитию проектов, скорее наоборот, она вызывала сопротивление бессознательного против такого неестественного для меня ритма жизни, особенно в ситуациях, где оптимальное решение было не очевидно и требовалось поперебирать различные варианты.</p>
+
+<p>Спустя несколько лет мне удалось избавиться от основных «задолженностей перед жизнью» и с технической точки зрения реализовать почти всё, что было задумано. Но вот собрать на своих новых проектах достаточное количество людей для самоподдерживающегося общения так и не смог. Это поставило перед двумя новыми вопросами. Первый — в чём всё-таки проблема: это сделанное мной из-за эмоционального выгорания стало хуже по сравнению с тем, что я создавал в 2000-х годах, или же Интернет настолько изменился в худшую сторону, то есть крупные площадки типа ВК и YouTube почти уничтожили малые сообщества на отдельных сайтах. Второй — где всё-таки баланс между результативностью (для которой, как это ни прискорбно, необходима самодисциплина и планирование) и удовольствием от жизни, для которого нужна свобода, спонтанность и отсутствие чётких планов. Несколько раз я пытался пробовать обе крайности: то мучил себя различными системами планирования, и изучал материалы по личной эффективности, то, наоборот, решал жить без графиков, планов и расписаний. Но долго не смог прожить ни в одной, ни в другой из них. Так что эти вопросы остаются для меня актуальными и сейчас.</p>
+
+<p class="right pubdate">Написано в октябре 2009, позже несколько раз обновлялось.</p>
+ <div class="post_list">
+
+</div> 
+<p class="center"><a href="/me/">Вернуться к оглавлению раздела «Архив»</a></p>
+        </article>
+         <div class="footer">
+  <nav class="nav_bar">
+    <ul class="footer_owner_info">
+      <!-- email -->
+      
+      <li><a class="footer_btn" href="mailto://me@4xpro.ru">
+        <i class="fa fa-envelope-square">
+          
+          <span>Email</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- linkedin -->
+      
+      <!-- VK -->
+      
+      <li><a class="footer_btn" href="https://vk.com/4x_pro">
+        <i class="fa fa-vk">
+          
+          <span>VK</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- Telegram -->
+      
+      <li><a class="footer_btn" href="https://t.me/">
+        <i class="fa fa-telegram">
+          
+          <span>Telegram</span>
+          
+        </i>
+      </a></li>
+      
+
+      <!-- github -->
+      
+      <li><a class="footer_btn" href="https://github.com/XXXXPro">
+        <i class="fa fa-github">
+          
+          <span>Github</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- gitlab -->
+      
+      <!-- website -->
+      
+      <!-- instagram -->
+      
+      <li><a class="footer_btn" href="https://instagram.com/4x_pro">
+        <i class="fa fa-instagram">
+          
+          <span>Instagram</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- twitter -->
+      
+      <li><a class="footer_btn" href="https://twitter.com/4X_Pro">
+        <i class="fa fa-twitter">
+          
+          <span>Twitter</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- facebook -->
+      
+      <li><a class="footer_btn" href="https://www.facebook.com/xxxxpro">
+        <i class="fa fa-facebook">
+          
+          <span>Facebook</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- youtube -->
+      
+      <!-- steam -->
+      
+      <li><a
+        class="footer_btn"
+        href="https://steamcommunity.com/id/xxxxpro"
+      >
+        <i class="fa fa-steam">
+          
+          <span>Steam</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- weibo -->
+      
+    </ul>
+    <!-- copyright -->
+
+<div class="footer_counters">
+
+<!-- Top100 (Kraken) Widget -->
+<span id="top100_widget"></span>
+<!-- END Top100 (Kraken) Widget -->
+
+<!-- Top100 (Kraken) Counter -->
+<script>
+    (function (w, d, c) {
+    (w[c] = w[c] || []).push(function() {
+        var options = {
+            project: 7695497,
+            element: 'top100_widget',
+        };
+        try {
+            w.top100Counter = new top100(options);
+        } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src =
+    (d.location.protocol == "https:" ? "https:" : "http:") +
+    "//st.top100.ru/top100/top100.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(window, document, "_top100q");
+</script>
+<noscript>
+  <img src="//counter.rambler.ru/top100.cnt?pid=7695497" alt="Топ-100" />
+</noscript>
+<!-- END Top100 (Kraken) Counter -->
+
+<!-- Rating Mail.ru counter -->
+<script>
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "3257302", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "topmailru-code");
+</script><noscript><div>
+<img src="https://top-fwz1.mail.ru/counter?id=3257302;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+</div></noscript>
+<!-- //Rating Mail.ru counter -->
+<!-- Rating Mail.ru logo -->
+<a href="https://top.mail.ru/jump?from=3257302">
+<img src="https://top-fwz1.mail.ru/counter?id=3257302;t=433;l=1" style="border:0;" height="31" width="88" alt="Top.Mail.Ru" onerror="this.style.display='none'" /></a>
+<!-- //Rating Mail.ru logo -->
+
+<!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
+target="_blank"><img id="licnt3785" width="88" height="31" style="border:0" 
+alt="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" onerror="this.style.display='none'" /></a><script>(function(d,s){d.getElementById("licnt3785").src=
+"https://counter.yadro.ru/hit?t12.11;r"+escape(d.referrer)+
+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+(document,screen)</script><!--/LiveInternet-->
+
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2F4xpro.ru"><img src="/src/assets/img/w3c.svg" style="background: #fff" alt="Я верстаю строго по стандартам. Кто счтает, что лучший валидатор — это броузер, тот неправ!" height="31" width="88" /></a>
+
+</div>
+
+    <ul class="footer_copyright">
+      <li class="copyright">© 2001 - 2022</li>
+      
+      <li>Материалы сайта могут использоваться свободно на условиях лицензии CC BY-NC-ND</li>
+      
+    </ul>
+    <div class="footer_copyright" id="cookie_warn">Этот сайт использует cookies, которые являются неотъемлемой частью протокола HTTP. <a href="#cookie_warn2" onclick="document.getElementById('cookie_warn2').className=''"; return false;'>Если вам это не нравится…</a>
+<span id="cookie_warn2" class="hidden"><br />То вы и только вы должны настроить их блокировку в вашем программном обеспечении, а не требовать что-то от владельца сайта. Если не хотите или не можете — ваше место в оффлайне!</span>
+     </div>
+  </nav>
+</div>
+ 
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <!-- multi-device width -->
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <!-- site description -->
+    
+    <meta content="Настоящий Компьютерщик – это тот, кто живёт ради познания и творческого труда на пользу Сетевого Сообщества." name="description"/>
+    <!-- title -->
+    <title>
+        
+            Моральный кодекс Настоящего Компьютерщика
+        
+    </title>
+    <!-- icon -->
+    <link href="/src/assets/img/favicon.ico" rel="shortcut icon bookmark" type="image/x-icon"/>
+    <!-- global stylesheet -->
+    <link rel="stylesheet" href="/src/assets/css/main.css" type="text/css"/>
+    <!-- fa 5.9.0 -->
+    <link rel="stylesheet" href="/src/assets/css/fa.min.css" type="text/css"/>
+    <!-- global script -->
+    <script src="/src/assets/js/main.js" async></script>
+    <meta property="og:title" content="Моральный кодекс Настоящего Компьютерщика"/>
+    <meta property="og:url" content="/me/codex.htm"/>
+    <meta property="og:description" content="Настоящий Компьютерщик – это тот, кто живёт ради познания и творческого труда на пользу Сетевого Сообщества."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Личный сайт XXXX Pro"/>
+    <meta property="og:image" content="/assets/img/logo.jpg"/>
+    <!-- mathjax 2.7.5 -->
+<!--   <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+    <!-- mermaid 8.11.5-->
+<!--    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.5/mermaid.min.js"></script>  -->
+    <style>
+.hidden { display: none }
+    </style>
+
+    <link rel="author" href="/humans.txt" />
+    <link rel="authorization_endpoint" href="http://4xpro.ru/.oauth/authorization_endpoint"/>
+
+</head>
+
+  <body class="page">
+    <!-- collection list, shown by click "archive" buttom in header -->
+<div class="collection_list_container"  id="the_collection_list">
+<div class="collection_list_background"  onclick="close_collection_list()"></div>
+<div class="collection_list" onload="none">
+    <div class="collection_list_header">
+        <!-- TODO: search post -->
+                                            <!-- <a class="search_btn">
+      <i class="fa fa-search"> Search</i>
+    </a>
+    &nbsp; -->
+        <table class="collection_list_header_title">
+            <tr>
+                <td>Archive:</td>
+                <td id="clh_title"></td>
+            </tr>
+        </table>
+        <div class="close_btn" onclick="close_collection_list()">
+            <a class="close_btn_icon">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+    </div>
+    <div class="collection_name_list">
+        <table class="vertical_center_table">
+            <tr>
+                <td>
+                    <ul>
+                        <!-- show all collections -->
+                        <li>
+                            <a class="a_collection_label" onclick="show_collection('all')">All
+                            </a>
+                        </li>
+                        <!-- show a simple collection -->
+                        
+                            
+                                
+                                    
+                                        <li>
+                                            <a class="a_collection_label" onclick="show_collection('biografy')">
+                                                
+                                                    biografy
+                                                
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                
+                            
+                        
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="posts_by_cate">
+        <!-- post list in all collections -->
+        <div class="post_list_in_1_collection" id="all">
+            <table class="vertical_center_table">
+                <tr>
+                    <td>
+                        <ul>
+                            
+                                
+                                    
+                                        
+                                            <p class="h_collection_label">
+                                                
+                                                    biografy
+                                                
+                                            </p>
+                                            
+                                            <br/>
+                                        
+                                    
+                                        
+                                    
+                                
+                            
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- post list in a collection -->
+        
+            <div class="post_list_in_1_collection" id="biografy">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="post_list_in_1_collection" id="posts">
+                <table class="vertical_center_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+    </div>
+</div>
+</div>
+    <div class="container" id="ctner">
+       <div class="header">
+  <table class="vertical_center_table">
+    <tr>
+      <td>
+        <nav class="nav_bar">
+          <ul>
+            <!-- left header -->
+            <li class="li_left">
+              <!-- open collection tree -->
+              
+              <!-- home -->
+              
+              <a class="header_btn" href="/">
+                <i class="fa btn_icon fa-home"></i>
+                  
+                  <span class="btn_text">Главная</span>
+                  
+              </a>
+              
+              
+                
+                  <a class="header_btn" href="/projects.htm">
+                    <i class="fa btn_icon fa-code"></i>
+                      
+                      <span class="btn_text">Проекты</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="/idealists.htm">
+                    <i class="fa btn_icon fa-level-up"></i>
+                      
+                      <span class="btn_text">Идеализм</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="/computers.htm">
+                    <i class="fa btn_icon fa-desktop"></i>
+                      
+                      <span class="btn_text">Компьютеры</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="/me/">
+                    <i class="fa btn_icon fa-id-card-o"></i>
+                      
+                      <span class="btn_text">Биография</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="/others/">
+                    <i class="fa btn_icon fa-users"></i>
+                      
+                      <span class="btn_text">Глазами других</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="http://4xpro.ru/lytdybr/">
+                    <i class="fa btn_icon fa-pencil-square-o"></i>
+                      
+                      <span class="btn_text">Дневник</span>
+                      
+                  </a>
+                
+                  <a class="header_btn" href="http://4xpro.ru/forum/">
+                    <i class="fa btn_icon fa-comments-o"></i>
+                      
+                      <span class="btn_text">Форум</span>
+                      
+                  </a>
+                
+              
+              <!-- maximize -->
+              
+            </li>
+            <!-- right header -->
+            <li class="span_right">
+              
+              <a class="site_title" href="/"
+                >Личный сайт XXXX Pro</a
+              >
+               
+            </li>
+          </ul>
+        </nav>
+        <!-- <hr /> -->
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- table of content -->
+
+<!-- toggle maximize -->
+
+<!-- encrypt and decrypt -->
+
+
+      <div class="div_article" id="div_atcl">
+        <article id="main_atcl" itemscope itemtype="http://schema.org/BlogPosting">
+          <h1 id="моральный-кодекс-настоящего-компьютерщика">Моральный Кодекс Настоящего Компьютерщика</h1>
+
+<p>Настоящий Компьютерщик – это образ жизни, при котором главными целям и источниками получения удовлетворения от жизни являются познание и творческий труд на пользу Сетевого Сообщества. Для достижения этих целей</p>
+
+<p>Настоящий Компьютерщик (для краткости — просто НК) должен обладать следующими качествами:</p>
+<ol>
+  <li>Стремлением к познанию, т.е.  желанием постоянно расширять и углублять свои знания о компьютерах и Сети, причем познания могут относиться не только к технической стороне работы компьютеров, но и к вопросам, связанным с ними косвенно, например, влиянию компьютеров на межчеловеческие отношения.</li>
+  <li>Целеустремленностью и упорством, т.е.  умением четко ставить цель и добиваться ее, но при этом уметь вовремя отказаться, если цель — недостижима, а также умением учиться на чужих ошибках и признавать свои, а также высокой работоспособностью для максимально быстрого достижения своих целей.</li>
+  <li>Готовностью помочь другим людям. НК всегда готов помочь другому человеку в компьютерных вопросах, за исключением одного единственного случая: когда кто-то пытается нагло наживаться таким образом за счет НК. Помогая другим, НК действует по принципу «лучше научить человека ловить рыбу, чем накормить его», т.е.  он всегда старается объяснить, отчего берутся проблемы и как их решать.</li>
+  <li>Информация, с точки зрения НК, не может быть товаром, который покупается и продается, она должна быть либо свободно доступной (т.е.  не превышать стоимости носителя или передачи по каналу связи), либо засекреченной. 5. Самым большим преступлением, с точки зрения НК, является отказ поделиться информацией с человеком, который желает научиться что-то делать сам, если этот отказ продиктован соображениями собственной материальной выгоды.</li>
+  <li>Дружба в понимании НК может существовать только в Сети, так как только Сетевые средства и способы общения позволяют достичь высокого уровня доверия между людьми, и при этом никак не ограничить их свободу.</li>
+  <li>НК не принимает гендерные роли (т.е.  модель поведения, считающуюся традиционной для представителей определенного пола) , который оффлайновое некомпьютерное общество пытается ему навязать. Как следствие, любовные отношения с девушкой у НК возможны только в том случае, если девушка окажется способной к другому распределению ролей. В частности, если девушка сможет: а) сама познакомиться с НК, б) постоянно проявлять инициативу для проведения оффлайновых встреч, в) первой признаться в любви, г) не требовать, чтобы ей уделялось внимания больше, чем компьютеру, д) уступать НК в мелких бытовых вопросах.</li>
+  <li>В оффлайне НК избегает всяческих шумных компаний и многолюдных мероприятий, т.к.  в них он чувствует себя лишним и ненужным. Кроме этого, НК не признает такого понятия как «летний отдых» в традиционном обывательском понимании, а использует отпуск (или каникулы) для самосовершенствования или расширения компьютерных знаний.</li>
+  <li>НК постоянно ищет способы добиться от компьютера большей производительности за счет применения накопленных знаний и оптимизации программных и аппаратных настроек без вложения дополнительных денежных средств. НК постоянно поддерживает почти идеальный порядок на своем компьютере, он почти всегда знает, что у него есть и где это искать.</li>
+  <li>Излишние материальные ценности (т.е.  такие, которые не являются необходимыми для поддержания жизнедеятельности и не оказывают непосредственного влияния на эффективность работы на благо Сетевого сообщества) для НК не представляют никакой ценности.</li>
+  <li>НК пытается заставить окружающих принимать его таким, какой он есть, не допускает навязывания стереотипов поведения, противоречащих его внутренним потребностям, и презирает людей, которые пытаются это сделать. Кроме этого, он никогда и ни при каких условиях не прощает когда-либо нанесенных обид и рано или поздно мстит обидчику.</li>
+</ol>
+
+<p class="pubdate right">Написано в начале 2001 года</p>
+
+<p>Много позже, в 2021 году я опубликовал в блоге <a href="http://4xpro.ru/internet/it-professionals/">сравнительную таблицу Настоящих Компьютерщиков и IT-профессионалов</a>.</p>
+ <div class="post_list">
+
+</div> 
+<p class="center"><a href="/me/">Вернуться к оглавлению раздела «Архив»</a></p>
+        </article>
+         <div class="footer">
+  <nav class="nav_bar">
+    <ul class="footer_owner_info">
+      <!-- email -->
+      
+      <li><a class="footer_btn" href="mailto://me@4xpro.ru">
+        <i class="fa fa-envelope-square">
+          
+          <span>Email</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- linkedin -->
+      
+      <!-- VK -->
+      
+      <li><a class="footer_btn" href="https://vk.com/4x_pro">
+        <i class="fa fa-vk">
+          
+          <span>VK</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- Telegram -->
+      
+      <li><a class="footer_btn" href="https://t.me/">
+        <i class="fa fa-telegram">
+          
+          <span>Telegram</span>
+          
+        </i>
+      </a></li>
+      
+
+      <!-- github -->
+      
+      <li><a class="footer_btn" href="https://github.com/XXXXPro">
+        <i class="fa fa-github">
+          
+          <span>Github</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- gitlab -->
+      
+      <!-- website -->
+      
+      <!-- instagram -->
+      
+      <li><a class="footer_btn" href="https://instagram.com/4x_pro">
+        <i class="fa fa-instagram">
+          
+          <span>Instagram</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- twitter -->
+      
+      <li><a class="footer_btn" href="https://twitter.com/4X_Pro">
+        <i class="fa fa-twitter">
+          
+          <span>Twitter</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- facebook -->
+      
+      <li><a class="footer_btn" href="https://www.facebook.com/xxxxpro">
+        <i class="fa fa-facebook">
+          
+          <span>Facebook</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- youtube -->
+      
+      <!-- steam -->
+      
+      <li><a
+        class="footer_btn"
+        href="https://steamcommunity.com/id/xxxxpro"
+      >
+        <i class="fa fa-steam">
+          
+          <span>Steam</span>
+          
+        </i>
+      </a></li>
+      
+      <!-- weibo -->
+      
+    </ul>
+    <!-- copyright -->
+
+<div class="footer_counters">
+
+<!-- Top100 (Kraken) Widget -->
+<span id="top100_widget"></span>
+<!-- END Top100 (Kraken) Widget -->
+
+<!-- Top100 (Kraken) Counter -->
+<script>
+    (function (w, d, c) {
+    (w[c] = w[c] || []).push(function() {
+        var options = {
+            project: 7695497,
+            element: 'top100_widget',
+        };
+        try {
+            w.top100Counter = new top100(options);
+        } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src =
+    (d.location.protocol == "https:" ? "https:" : "http:") +
+    "//st.top100.ru/top100/top100.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(window, document, "_top100q");
+</script>
+<noscript>
+  <img src="//counter.rambler.ru/top100.cnt?pid=7695497" alt="Топ-100" />
+</noscript>
+<!-- END Top100 (Kraken) Counter -->
+
+<!-- Rating Mail.ru counter -->
+<script>
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "3257302", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "topmailru-code");
+</script><noscript><div>
+<img src="https://top-fwz1.mail.ru/counter?id=3257302;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+</div></noscript>
+<!-- //Rating Mail.ru counter -->
+<!-- Rating Mail.ru logo -->
+<a href="https://top.mail.ru/jump?from=3257302">
+<img src="https://top-fwz1.mail.ru/counter?id=3257302;t=433;l=1" style="border:0;" height="31" width="88" alt="Top.Mail.Ru" onerror="this.style.display='none'" /></a>
+<!-- //Rating Mail.ru logo -->
+
+<!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
+target="_blank"><img id="licnt3785" width="88" height="31" style="border:0" 
+alt="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" onerror="this.style.display='none'" /></a><script>(function(d,s){d.getElementById("licnt3785").src=
+"https://counter.yadro.ru/hit?t12.11;r"+escape(d.referrer)+
+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+(document,screen)</script><!--/LiveInternet-->
+
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2F4xpro.ru"><img src="/src/assets/img/w3c.svg" style="background: #fff" alt="Я верстаю строго по стандартам. Кто счтает, что лучший валидатор — это броузер, тот неправ!" height="31" width="88" /></a>
+
+</div>
+
+    <ul class="footer_copyright">
+      <li class="copyright">© 2001 - 2022</li>
+      
+      <li>Материалы сайта могут использоваться свободно на условиях лицензии CC BY-NC-ND</li>
+      
+    </ul>
+    <div class="footer_copyright" id="cookie_warn">Этот сайт использует cookies, которые являются неотъемлемой частью протокола HTTP. <a href="#cookie_warn2" onclick="document.getElementById('cookie_warn2').className=''"; return false;'>Если вам это не нравится…</a>
+<span id="cookie_warn2" class="hidden"><br />То вы и только вы должны настроить их блокировку в вашем программном обеспечении, а не требовать что-то от владельца сайта. Если не хотите или не можете — ваше место в оффлайне!</span>
+     </div>
+  </nav>
+</div>
+ 
+      </div>
+    </div>
+  </body>
+</html>
