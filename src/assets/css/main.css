@@ -1,20 +1,24 @@
 @import url(../lightbox.css);
 @font-face {
   font-family: "Fira Code Online";
-  src: url("../fonts/FiraCode-Regular.woff"); }
+  src: url("../fonts/FiraCode-Regular.woff");
+  font-display: swap; }
 @font-face {
   font-family: "Operator 8bit";
   font-weight: bold;
-  src: url("../fonts/8bitoperatorplus8-bold.ttf"); }
+  src: url("../fonts/8bitoperatorplus8-bold.ttf");
+  font-display: swap; }
 @font-face {
   font-family: "Operator 8bit";
   font-weight: normal;
-  src: url("../fonts/8bitoperatorplus8-regular.ttf"); }
+  src: url("../fonts/8bitoperatorplus8-regular.ttf");
+  font-display: swap; }
 @font-face {
   font-family: "Operator 8bit";
   font-weight: normal;
   font-stretch: condensed;
-  src: url("../fonts/8bitoperatorplussc-regular.ttf"); }
+  src: url("../fonts/8bitoperatorplussc-regular.ttf");
+  font-display: swap; }
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0; }
