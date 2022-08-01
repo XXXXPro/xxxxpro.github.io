@@ -15,12 +15,15 @@
     </title>
     <!-- icon -->
     <link href="/src/assets/img/favicon.png" rel="shortcut icon bookmark" type="image/png"/>
+    <link rel="preload" href="/src/assets/fonts/8bitoperatorplus8-bold.ttf" as="font" crossorigin/>
+    <link rel="preload" href="/src/assets/fonts/8bitoperatorplus8-regular.ttf" as="font" crossorigin/>
+    <link rel="preload" href="/src/assets/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin/>
     <!-- global stylesheet -->
     <link rel="stylesheet" href="/src/assets/css/main.css" type="text/css"/>
     <!-- fa 5.9.0 -->
-    <link rel="stylesheet" href="/src/assets/css/fa.min.css" type="text/css"/>
+<!--    <link rel="stylesheet" href="/src/assets/css/fa.min.css" type="text/css"/> -->
     <!-- global script -->
-    <script src="/src/assets/js/main.js" async></script>
+    <script src="/src/assets/js/main.js" defer="defer"></script>
     <meta property="og:title" content="Компьютеры XXXX Pro"/>
     <meta property="og:url" content="/computers.htm"/>
     <meta property="og:description" content="За всю свою жизнь я сменил 9 компьютеров"/>
@@ -36,7 +39,6 @@
     </style>
 
     <link rel="author" href="/humans.txt" />
-    <link rel="authorization_endpoint" href="http://4xpro.ru/.oauth/authorization_endpoint"/>
 
 </head>
 
@@ -147,7 +149,7 @@
 <table id="computers">
 <tbody>
 
-<tr><td><img src="/src/assets/img/nophoto.png" alt="Нет фотографии" width="320" height="400" />
+<tr><td><img src="/src/assets/img/nophoto.png" class="nophoto" alt="Нет фотографии" width="320" height="400" />
 </td>
 <td><h4>Поиск-3: начало</h4>
 <div><b>Дата покупки:</b> <span class="hlight">июнь-июль 1993</span></div>
@@ -163,7 +165,7 @@
 </p>
 </td></tr>
 
-<tr><td><img src="/src/assets/img/nophoto.png" alt="Нет фотографии" width="320" height="400" />
+<tr><td><img src="/src/assets/img/nophoto.png" class="nophoto" alt="Нет фотографии" width="320" height="400" />
 </td>
 <td><h4>386-ый — большой шаг вперёд</h4>
 <div><b>Дата покупки:</b> <span class="hlight">январь 1995</span></div>
@@ -181,7 +183,7 @@
 </p>
 </td></tr>
 
-<tr><td><img src="/src/assets/img/nophoto.png" alt="Нет фотографии" width="320" height="400" />
+<tr><td><img src="/src/assets/img/nophoto.png" class="nophoto" alt="Нет фотографии" width="320" height="400" />
 </td>
 <td><h4>Первый Pentium и долгожданная звуковая карта</h4>
 <div><b>Дата покупки:</b> <span class="hlight">июль 1997</span></div>
@@ -200,7 +202,7 @@
 </p>
 </td></tr>
 
-<tr><td><img src="/src/assets/img/nophoto.png" alt="Нет фотографии" width="320" height="400" />
+<tr><td><img src="/src/assets/img/nophoto.png" class="nophoto" alt="Нет фотографии" width="320" height="400" />
 </td>
 <td><h4>Pentium III — прощание с MS-DOS</h4>
 <div><b>Дата покупки:</b> <span class="hlight">июль 2000</span></div>
@@ -216,7 +218,7 @@ Windows 98 оказался ещё более глючным, чем Windows 95.
 </p>
 </td></tr>
 
-<tr><td><img src="/src/assets/img/nophoto.png" alt="Нет фотографии" width="320" height="400" />
+<tr><td><img src="/src/assets/img/nophoto.png" class="nophoto" alt="Нет фотографии" width="320" height="400" />
 </td>
 <td><h4>Pentium IV — первый самосборный компьютер</h4>
 <div><b>Дата покупки:</b> <span class="hlight">август 2002</span></div>

@@ -15,12 +15,15 @@
     </title>
     <!-- icon -->
     <link href="/src/assets/img/favicon.png" rel="shortcut icon bookmark" type="image/png"/>
+    <link rel="preload" href="/src/assets/fonts/8bitoperatorplus8-bold.ttf" as="font" crossorigin/>
+    <link rel="preload" href="/src/assets/fonts/8bitoperatorplus8-regular.ttf" as="font" crossorigin/>
+    <link rel="preload" href="/src/assets/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin/>
     <!-- global stylesheet -->
     <link rel="stylesheet" href="/src/assets/css/main.css" type="text/css"/>
     <!-- fa 5.9.0 -->
-    <link rel="stylesheet" href="/src/assets/css/fa.min.css" type="text/css"/>
+<!--    <link rel="stylesheet" href="/src/assets/css/fa.min.css" type="text/css"/> -->
     <!-- global script -->
-    <script src="/src/assets/js/main.js" async></script>
+    <script src="/src/assets/js/main.js" defer="defer"></script>
     <meta property="og:title" content="Личный сайт XXXX Pro — идеалиста Интернета, Web-разработчика, Настоящего Компьютерщика и сторонника IndieWeb"/>
     <meta property="og:url" content="/"/>
     <meta property="og:description" content="Несколько слов обо мне, моём типе личности и жизненной позиции"/>
@@ -36,7 +39,6 @@
     </style>
 
     <link rel="author" href="/humans.txt" />
-    <link rel="authorization_endpoint" href="http://4xpro.ru/.oauth/authorization_endpoint"/>
 
 </head>
 
@@ -157,11 +159,11 @@
 <p><a id="portrait" href="/images/foto.jpg"><img src="/images/avatar.jpg" alt="Портрет XXXX Pro" width="200" height="273" /></a></p>
 
 <ul>
-  <li><strong>Идеалист Интернета.</strong> Воспринимаю Интернет как возможность объединения людей для построения нового, более совершенного (в плане человеческих отношений) мира, где места хватит всем, и каждый сможет быть собой.</li>
+  <li><strong>Идеалист Интернета.</strong> Воспринимаю Интернет как возможность объединения людей для построения нового, более совершенного (в плане человеческих отношений) мира, где места хватит всем, и каждый сможет быть собой. <a href="/idealists.htm">Подробнее…</a></li>
   <li><strong>Web-разработчик.</strong> Пишу на PHP, Javascript и Go. Знаю Python, хоть и не использую его для Web-разработки из соображений производительности. Со студенческих времён более-менее помню C и ассемблер для x86.</li>
   <li><strong>Специализируюсь на оптимизации загрузки Web-страниц.</strong> Экономия ресурсов — это моё всё! А ещё это способ сделать Интернет дружелюбнее к пользователям со слабыми компьютерами и плохими каналами связи.</li>
   <li><strong>Занимаюсь разработкой ботов для Telegram.</strong> Разработка ботов напоминает программирование времён DOS, где всё взаимодействие с пользователем строилось на основе ввода/вывода данных в консоль, без всякого GUI, и этим мне и нравится.</li>
-  <li><strong>Сторонник IndieWeb и Fediverse.</strong> Вижу в них хоть какую-то альтернативу централизованным социальным сетям, появление которых так испортило Интернет.</li>
+  <li><strong>Сторонник IndieWeb и Fediverse.</strong> Вижу в них хоть какую-то альтернативу централизованным социальным сетям, появление которых так испортило Интернет. <a href="https://indieweb.org">Об Indieweb</a></li>
 </ul>
 
 <h2 class="clear">Мои проекты</h2>
@@ -209,6 +211,7 @@
 </li>
 
 </ul>
+<p class="small right"><a href="/projects.htm">Смотреть всё <i class="fa fa-forward"></i></a></p>
 
 <h2 id="мысль-дня">Мысль дня:</h2>
 <blockquote id="motd">MS-DOS будет вечно жить в наших сердцах!</blockquote>
