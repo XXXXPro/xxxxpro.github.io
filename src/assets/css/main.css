@@ -117,7 +117,7 @@
 
 .highlight .hll { background-color: #131010; }
 
-body { line-height: 1.7; font-size: 16.8px; color: #51e3fb; font-family: "Liberation Serif", "DejaVu Serif", Georgia, Times, serif, "Source Han Sans CN Medium", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei"; background-image: url("../img/bg.jpg"); background-attachment: fixed; background-position: bottom right; background-size: cover; }
+body { line-height: 1.7; font-size: 16.8px; color: #61b3ef; font-family: "Liberation Serif", "DejaVu Serif", Georgia, Times, serif, "Source Han Sans CN Medium", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei"; background-image: url("../img/bg.jpg"); background-attachment: fixed; background-position: bottom right; background-size: cover; }
 
 h1 { font-size: 23px; text-align: center !important; font-weight: bold; margin: 1.8em 0 1.5em 0; color: #d3e3f3; font-family: "Operator 8bit"; }
 
@@ -171,7 +171,7 @@ table tbody td { padding: 8px 10px; line-height: 150%; }
 
 code { font-family: "Fira Code", "Source Code Pro", "Fira Code Online", Monaco, Consolas, "Lucida Console", monospace; }
 
-article a { color: #d3e3f3; text-decoration: none; }
+article a { color: #51e3fb; text-decoration: none; }
 
 article .language-plaintext { font-size: 98%; color: #f38a00; text-shadow: -0.5px -0.5px 0 #e4f88a, 0.5px 0.5px 0 #333, 0.5px 0.5px 0 #5d5e55; }
 
@@ -379,7 +379,7 @@ input[type="checkbox"]:checked::before { content: "\2714"; vertical-align: middl
 
 #products td img { max-width: none; }
 
-.logo { line-height: 112%; }
+.logo { line-height: 112%; color: #51e3fb; }
 
 #computers td:first-child { width: 320px; }
 

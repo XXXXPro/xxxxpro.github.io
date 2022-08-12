@@ -6,6 +6,7 @@
    
 /* THANKS */
    Unknown author of Megaman X wallpaper. (This picture was taken from https://wallpapercave.com/w/wp5524429 )
+   10geek, friend of mine who helped me to make background picture
    akiritsu DeerRIDER, the author of pRoJEct-VeXEd theme for Jekyll ( https://github.com/akiritsu/pRoJEct-VeXEd )
    All Jekyll development team ( https://jekyllrb.com )
 
