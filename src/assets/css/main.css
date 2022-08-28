@@ -117,7 +117,7 @@
 
 .highlight .hll { background-color: #131010; }
 
-body { line-height: 1.7; font-size: 16.8px; color: #61b3ef; font-family: "Liberation Serif", "DejaVu Serif", Georgia, Times, serif, "Source Han Sans CN Medium", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei"; background-image: url("../img/bg.jpg"); background-attachment: fixed; background-position: bottom right; background-size: cover; }
+body { line-height: 1.7; font-size: 16.8px; color: #61b3ef; font-family: "Liberation Serif", Georgia, Times, serif, "Source Han Sans CN Medium", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei"; background-image: url("../img/bg.jpg"); background-attachment: fixed; background-position: bottom right; background-size: cover; }
 
 h1 { font-size: 23px; text-align: center !important; font-weight: bold; margin: 1.8em 0 1.5em 0; color: #d3e3f3; font-family: "Operator 8bit"; }
 
@@ -189,7 +189,7 @@ input[type="checkbox"]:checked::before { content: "\2714"; vertical-align: middl
 
 .footer .footer_owner_info { font-size: 14px; margin: 0; padding: 0; }
 
-.footer .footer_owner_info p { font-size: 12.6px; margin: 0 0.5em 0 0.05em; display: inline; font-family: "Liberation Serif", "DejaVu Serif", Georgia, Times, serif, "Source Han Sans CN Medium", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei"; }
+.footer .footer_owner_info p { font-size: 12.6px; margin: 0 0.5em 0 0.05em; display: inline; font-family: "Liberation Serif", Georgia, Times, serif, "Source Han Sans CN Medium", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei"; }
 
 .footer .footer_copyright { margin: 0; font-size: 12px; }
 
