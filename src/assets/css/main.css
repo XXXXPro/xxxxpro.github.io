@@ -379,7 +379,7 @@ input[type="checkbox"]:checked::before { content: "\2714"; vertical-align: middl
 
 #products td img { max-width: none; }
 
-.logo { line-height: 112%; color: #51e3fb; }
+.logo { line-height: 112%; color: #51e3fb; font-family: 'DejaVu Sans Mono','Courier New', monospace; }
 
 #computers td:first-child { width: 320px; }
 
