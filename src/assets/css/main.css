@@ -434,7 +434,7 @@ blockquote {
   font-size: 93%;
   font-style: inherit;
   line-height: 1.5;
-  color: #d2944f;
+  color: rgb(210, 147.5, 78.5);
 }
 
 sup a {
@@ -573,7 +573,7 @@ input[type=checkbox]:checked::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(45, 122, 143, 0.6);
+  background: rgba(45, 121.5, 142.5, 0.6);
   visibility: hidden;
   z-index: 4;
 }
